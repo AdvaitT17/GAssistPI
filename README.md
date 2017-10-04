@@ -130,6 +130,6 @@ sudo systemctl start snowboy.service
 **Thanks to**
 
 Pi Zero - forked and modified from warchildmd's repo (https://github.com/warchildmd/google-assistant-hotword-raspi).   
-Pi 3 Installer has been forked and modified from Shivasiddharth  (https://github.com/shivasiddharth/GassistPi)     
+Pi 3 Installer has been forked and modified from Shivasiddharth     
 
 
