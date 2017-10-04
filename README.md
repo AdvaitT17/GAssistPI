@@ -1,7 +1,7 @@
 # Personal Assistant based on Artificial Intelligence
 Artificial intelligence (AI, also machine intelligence, MI) is intelligence exhibited by machines, rather than humans or other animals (natural intelligence, NI). In computer science, the field of AI research defines itself as the study of "intelligent agents": any device that perceives its environment and takes actions that maximise its chance of success at some goal.
 # Prerequisites 
-**Works with Pi3 as well as Pi Zero W
+**Works with Raspberry Pi 3
 
 # Features:  
 **1. Headless auto start on boot with multiple wakeword activation trigger.**   
@@ -69,14 +69,12 @@ speaker-test -t wav
 	4.1 Make the installers Executable  
 	```
 	sudo chmod +x /home/pi/Personal-AssistPi/scripts/gassist-installer-pi3.sh
-	sudo chmod +x /home/pi/Personal-AssistPi/scripts/gassist-installer-pi-zero.sh
 	sudo chmod +x /home/pi/Personal-AssistPi/scripts/snowboy-deps-installer.sh  
   
 	```
 	4.2 Execute the installers (Run the snowboy installer first. **Don't be in a hurry and Don't run them parallely, Run them one after the other**
 	```
 	sudo  /home/pi/Personal-AssistPi/scripts/snowboy-deps-installer.sh
-	sudo  /home/pi/Personal-AssistPi/scripts/gassist-installer-pi-zero.sh
 	sudo  /home/pi/Personal-AssistPi/scripts/gassist-installer-pi3.sh  
 	
 	```
@@ -111,14 +109,14 @@ sudo chmod +x /home/pi/Personal-AssistPi/scripts/service-installer.sh
 sudo /home/pi/Personal-AssistPi/scripts/service-installer.sh    
 ```  
 
-3. Enable the services - **Pi3 and Armv7 users, if you need custom wakeword functionality, then enable both the services, else enable just the "gassistpi-ok-ggogle.service" - Pi Zero users, enable snowboy services alone**        
+3. Enable the services  
 
 ```
 sudo systemctl enable gassistpi-ok-google.service  
 sudo systemctl enable snowboy.service
 ```  
 
-4. Start the service - **Pi3 and Armv7 users, if you need custom wakeword functionality, then start both the services, else start just the "gassistpi-ok-ggogle.service" - Pi Zero users, start snowboy services alone**    
+4. Start the service   
 
 ```
 sudo systemctl start gassistpi-ok-google.service  
@@ -129,7 +127,8 @@ sudo systemctl start snowboy.service
 
 **Thanks to**
 
-Pi Zero - forked and modified from warchildmd's repo (https://github.com/warchildmd/google-assistant-hotword-raspi).   
+Google Cloud Network
+grpc.io for Remote Procedure Calls (gRPC Protocol)
 Pi 3 Installer has been forked and modified from Shivasiddharth     
 
 
